@@ -1,0 +1,16 @@
+{
+	"leaves":[
+	{"date_calendar":"03", "date_month":"SEP", "leave_reason":"Leave Without Pay", "leave_duration":"03 Sep - 07 Sep", "status":"In-Process", "view": "cancel-box", "uid": "upx"},
+	{"date_calendar":"25", "date_month":"AUG", "leave_reason":"Could Not Sign In", "leave_duration":"25 Aug - 25 Aug", "status":"In-Process", "view": "cancel-box", "uid": "upy"},
+	{"date_calendar":"01", "date_month":"JUL", "leave_reason":"Leave Without Pay", "leave_duration":"03 Jul - 07 Jul", "status":"Rejected",   "view" : "no-box"},
+	{"date_calendar":"25", "date_month":"JUN", "leave_reason":"Paid Leave",        "leave_duration":"25 Jun - 25 Jun", "status":"Approved",   "view": "no-box"},
+	{"date_calendar":"23", "date_month":"MAY", "leave_reason":"Leave Without Pay", "leave_duration":"03 May - 07 May", "status":"Rejected",   "view": "no-box"}
+	],
+	"attendance":[
+	{"date_calendar":"07", "date_month":"SEP", "day":"Monday",    "attend_reason": "Absent", "status":"Absent", "view": "add-box", "uid": "add-box"},
+	{"date_calendar":"04", "date_month":"SEP", "day":"Friday",    "attend_reason": "Punched", "status":"Present", "view": "no-box", "uid": "no-box"},
+	{"date_calendar":"03", "date_month":"SEP", "day":"Thursday",  "attend_reason": "Absent", "status":"Absent", "view": "add-box", "uid": "add-box"},
+	{"date_calendar":"02", "date_month":"SEP", "day":"Wednesday", "attend_reason": "Punched", "status":"Present", "view": "no-box", "uid": "no-box"},
+	{"date_calendar":"01", "date_month":"SEP", "day":"Tuesday",   "attend_reason": "Absent", "status":"Absent",  "view": "add-box", "uid": "add-box"}
+    ]
+}

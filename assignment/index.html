@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+	    <title>Mobile Application</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- CSS Load -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="style.css" />
+		<!-- Boostrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Icon Load f4 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Icon Load  f5-->
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
+	</head>
+	<body>
+	    <!-- Nav Top -->
+	    <div class="pave">
+		    <i class="fas fa-align-justify custom-toggle"></i>
+		    <span class="mid">Home</span>
+			<span class="func">
+	        <i class="fas fa-bell custom-bell" onclick="alert('You Clicked Notifications')"></i>
+	        <i class="fas fa-share-alt custom-share" onclick="alert('You Clicked Share')"></i>
+			<i class="fas fa-search custom-search" onclick="alert('You Clicked Search')"></i>
+			</span>
+		</div>
+		
+		<!-- Back Cover -->
+		<div class="back-cover">
+		    <div class="items">Home</div>
+		    <div class="items">Settings</div>
+		    <div class="items">Logout</div>
+		</div>
+		
+		<!-- Announcements -->
+		<div class="container bg-white mt-1">
+		    <span class="text-body">ANNOUNCEMENTS</span>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			  
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="img/image1.jpg" alt="r1" width="1920" height="1080">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/image2.jpg" alt="r2" width="1920" height="1080">
+				</div>
+				<div class="carousel-item">
+				  <img src="img/image3.jpg" alt="r3"  width="1920" height="1080">
+				</div>
+			  </div>
+		    </div>
+		  
+		  <!-- Left and right controls-->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </a>
+		  
+		</div>
+		
+		<!-- Leave & Attendance -->
+		<div class="leave-attend" appml-data="js/db1.json">
+		    <div class="leave"><a href="#">LEAVES</a></div>
+			<div class="attend"><a href="attend.html">ATTENDANCE</a></div>
+			<div class="dashboard" appml-repeat="leaves">
+			    <div class="{{status}}" id="{{uid}}">
+				    <div class="date-box">
+					    <div class="date">{{date_calendar}}</div>
+						<span class="month">{{date_month}}</span>
+					</div>
+					<div class="three-dot">
+						<div class="reason-bold">{{leave_reason}}</div>
+						<div class="date-blue">{{leave_duration}}</div>
+						<div class="staus-lucida">{{status}}</div>
+					</div>
+					<div class="{{view}}" onclick="checkClick(this)">
+					    <i class="fas fa-times-circle custom-cancel"></i>
+					</div>
+				</div>
+			</div>
+			<br/>
+		</div>
+		
+		
+		<!-- Nav Bottom -->
+		<div class="pave-bottom">
+		    <div class="mini-box" onclick="alert('You Clicked on Favourites')">
+			    <i class="fas fa-heart"></i>
+				<div>Favorites</div>
+			</div>
+			
+		    <div class="mini-box" onclick="alert('You Clicked on Team')" >
+			    <i class="fa fa-group"></i>
+				<div>Team</div>
+			</div>
+			
+			<div class="mini-box" onclick="alert('You Clicked on Approval')">
+			    <i class="fas fa-exclamation-circle"></i>
+				<div>Approval</div>
+			</div>
+			
+		    <div class="mini-box" onclick="alert('You Clicked on Notifications')">
+			    <i class="fas fa-bell"></i>
+				<div>Notifications</div>
+			</div>
+				
+		</div>
+		
+		<!-- OverFlow Button-->
+		<div class="add-calendar" onclick="alert('You Clicked Holiday Calendar')">
+		    <i class="fas fa-calendar-alt custom-calendar-alt"></i>
+		</div>
+		
+		<div class="add-data" onclick="alert('You Clicked Apply Leave')">
+		    <i class="fas fa-plus custom-plus"></i>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+		<script src="js/index.js"></script>
+		
+
+	</body>
+</html>
